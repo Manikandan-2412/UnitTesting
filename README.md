@@ -90,3 +90,59 @@ TearDown                                        TestCleanUp                     
 OneTimeTearDown                                 ClassCleanup                                                             IClassFixture<>(override after)
 Ignore                                          Ignore                                                                   [Fact(Skip ="reason")]
 Category                                        Category                                                                 [Trait("Key","Value")]
+
+
+============================================================================================================================================================================================
+
+
+TDD:
+---
+Test Driven Development
+ -->in TDD approach the user will write testcase first and then we create necessary classes and methods
+--> to fix the error:
+                    you have to right click on class or method and use this potential fix.
+ 
+MOQ Framework:
+-------------
+--> is all about testing a fake method
+--> the data are getting from the arrays,strings and collection
+--> when the real method is not there then go for the fake method
+
+MOQ means--> Not real / Not genuine
+creating fake objects(mocks)
+so that we can focus on its functionality
+
+===================================================
+We can able to achieve MOQ by 3 Method:
+-----------
+Stub    -->   these two are custom
+Fake 
+
+
+MOQ Framework --> built in package
+
+====================================================
+Stub:
+-----
+It  gives the hard coded output
+this test deosn't care about the interaction
+it only rnsures the Add method returns a value so the client can function
+
+
+-------------------------------------------------------------------
+Fake:
+----
+Fakes are simplified implementations of classes or interface
+basic logic is written in fake 
+the database is connected in real so that we can able to write a test
+
+-------------------------------------------------------------------
+MOQ Framework:
+--> it is used to create stub and fake in ready made way.
+--> built in way to mock stub and fake.
+objectname.object ---> is will act as a stub  object
+
+Adv:
+---
+No need to create manually fake or stub class using Moq
+
